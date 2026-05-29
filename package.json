@@ -1,0 +1,12 @@
+{
+  "name": "maler-maxi-website",
+  "version": "1.0.0",
+  "description": "MM Home – Maler Maximilian Hoffmann Website",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
