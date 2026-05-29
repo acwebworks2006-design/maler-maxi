@@ -90,6 +90,23 @@ footer,
 }
 
 @media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .standort-addr {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+
   .proof-bar {
     flex-direction: column !important;
     align-items: flex-start !important;
