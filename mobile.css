@@ -1,0 +1,117 @@
+/* Mobile overrides – loaded AFTER inline styles */
+
+html,
+body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  touch-action: pan-y;
+  overscroll-behavior-x: none;
+}
+
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
+}
+
+section,
+nav,
+footer,
+.hero,
+.sec-inner,
+.hero-inner,
+.contact-hero,
+.contact-grid,
+.contact-form-box,
+.why-sec,
+.standort-sec,
+.proof-bar,
+.modal-box,
+.legal-box {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+.sec-inner,
+.why-grid,
+.why-left,
+.why-right,
+.why-item,
+.why-item > div,
+.contact-grid,
+.contact-hero,
+.contact-hero-left,
+.about-grid,
+.about-right,
+.hero-inner,
+.hero-left,
+.svc-intro,
+.proj-header,
+.cinfo-block,
+.rev-card,
+.frow,
+.mfrow {
+  min-width: 0 !important;
+}
+
+.fgrp input,
+.fgrp select,
+.fgrp textarea,
+.mfgrp input,
+.mfgrp textarea,
+.btn {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+#drPanel {
+  width: min(320px, 100%) !important;
+  max-width: 100% !important;
+  transform: translate3d(100%, 0, 0) !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+#drPanel.is-open {
+  transform: translate3d(0, 0, 0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+#fc {
+  right: max(0px, env(safe-area-inset-right)) !important;
+  border-radius: 12px !important;
+}
+
+#fc:hover {
+  width: 56px !important;
+}
+
+@media (max-width: 768px) {
+  .proof-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .contact-form-box,
+  .contact-hero,
+  .standort-map-wrap {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .sec-h,
+  .why-item-text,
+  .why-item-title,
+  .about-lead,
+  .rev-text,
+  .hero-desc,
+  .contact-hero-sub,
+  .standort-addr,
+  p {
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+}
